@@ -6,7 +6,7 @@ I have used the Internet Movie Database (IMDb) movie reviews dataset to illustra
 Link to the dataset: http://ai.stanford.edu/~amaas/data/sentiment/
 
 # Dataset 
-The core dataset contains 50,000 reviews split evenly into 25k trainand 25k test sets. The overall distribution of labels is balanced (25k pos and 25k neg). We also include an additional 50,000 unlabeled documents for unsupervised learning.
+The core dataset contains 50,000 reviews split evenly into 25k trainand 25k test sets. The overall distribution of labels is balanced (25k pos and 25k neg).
 
 # Explorin the Data
 For choosing the model I have calculated the median for the training dataset(25000 samples) i.e., 174.0 and thebelow ratio 
