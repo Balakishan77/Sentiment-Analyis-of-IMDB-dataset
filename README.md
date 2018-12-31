@@ -26,7 +26,7 @@ I have followed the below rule as suggested in Google Text classification docume
   
 I have implemented Tf-idf encoding beacuse tf-idf encoding is marginally better than Count encoding and One-hot encoding in terms of accuracy (on average: 0.25-15% higher), and using this method for vectorizing n-grams. However it occupies more memory (as it uses floating-point representation) and takes more time to compute, especially for large datasets (can take twice as long in some cases).
 More importantly,the accuracy peaks at around 20,000 features for many datasets Adding more features over this threshold contributes very little and sometimes even leads to overfitting and degrades performance.
-[source: Google Text classification]
+[source: Google Text classification: https://developers.google.com/machine-learning/guides/text-classification/]
 
 # Model Implementation
 Multi-layer perceptrons (MLPs) are implemented using Keras and Random Forest Classifier implemented using Scikit-learn.
