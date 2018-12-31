@@ -12,6 +12,7 @@ The core dataset contains 50,000 reviews split evenly into 25k trainand 25k test
 For choosing the model I have calculated the median for the training dataset(25000 samples) i.e., 174.0 and thebelow ratio 
       ratio = number of samples/number of words per sample ratio
       ratio = 25000/median
+      
 I have followed the below rule as suggested in Google Text classification documentation.
 
 1.If this ratio is less than 1500, tokenize the text as n-grams and use a simple multi-layer perceptron (MLP) model to classify them.
@@ -28,7 +29,7 @@ More importantly,the accuracy peaks at around 20,000 features for many datasets 
 [source: Google Text classification]
 
 # Model Implementation
-This multi-layer perceptrons (MLPs) are implemented using Keras.
+Multi-layer perceptrons (MLPs) are implemented using Keras and Random Forest Classifier implemented using Scikit-learn.
 Models that process the tokens independently (not taking into account word order) as n-gram models. Simple multi-layer perceptrons (including logistic regression), gradient boosting machines and support vector machines models all fall under this category; they cannot leverage any information about text ordering.After comparing the performance of some of the n-gram models mentioned above and observed that multi-layer perceptrons (MLPs) typically perform better than other options. MLPs are simple to define and understand, provide good accuracy, and require relatively little computation.
 
 # Evaluting model performance
