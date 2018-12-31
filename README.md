@@ -8,7 +8,7 @@ Link to the dataset: http://ai.stanford.edu/~amaas/data/sentiment/
 # Dataset 
 The core dataset contains 50,000 reviews split evenly into 25k trainand 25k test sets. The overall distribution of labels is balanced (25k pos and 25k neg).
 
-# Explorin the Data
+# Exploring the Data
 For choosing the model I have calculated the median for the training dataset(25000 samples) i.e., 174.0 and thebelow ratio 
       ratio = number of samples/number of words per sample ratio
       ratio = 25000/median
@@ -18,6 +18,7 @@ I have followed the below rule as suggested in Google Text classification docume
   a. Split the samples into word n-grams; convert the n-grams into vectors.
   b. Score the importance of the vectors and then select the top 20K using the scores.
   c. Build an MLP model.
+  
 2.If the ratio is greater than 1500, tokenize the text as sequences and use a sepCNN model to classify them.
   a. Split the samples into words; select the top 20K words based on their frequency.
   b. Convert the samples into word sequence vectors.
